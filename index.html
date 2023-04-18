@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&family=Poppins&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./whatsapp.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <title>Paulo Freire Instituto</title>
 </head>
 <body>
@@ -20,6 +22,7 @@
     <i class="fa fa-whatsapp my-float"></i>
     </a>
     <header>
+        <div></div>
         <div class="navbar-container">
             <div class="navbar-top">
                 <div class="social-media">
@@ -44,10 +47,10 @@
                     </div>
                 <ul class="links">
                     <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./index.html">Nosotros</a></li>
+                    <li><a href="#ancla-nosotros">Nosotros</a></li>
                     <li><a href="#ancla-cursos">Cursos</a></li>
                     <li><a href="./index.html">Contacto</a></li>
-                    <li><a href="./certificados.html">Certificados</a></li>
+                    <!--li><a href="./certificados.html">Certificados</a></li-->
                 </ul>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqiQea_KVITxVRD4LKvveddTkx2hc-XiGwzx3k-_Z1xBJdQQ/viewform?usp=sf_link" class="action_btn">Inscribite</a>
                 <div class="toggle_btn">
@@ -57,7 +60,7 @@
 
             <div class="dropdown_menu">
                     <li class="nav-item"><a href="./index.html">Inicio</a></li>
-                    <li class="nav-item"><a href="./index.html">Nosotros</a></li>
+                    <li class="nav-item"><a href="#ancla-nosotros">Nosotros</a></li>
                     <li class="nav-item"><a href="#ancla-cursos">Cursos</a></li>
                     <li class="nav-item"><a href="./index.html">Contacto</a></li>
                     <li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeqiQea_KVITxVRD4LKvveddTkx2hc-XiGwzx3k-_Z1xBJdQQ/viewform?usp=sf_link" class="action_btn">Inscribite</a></li>
@@ -70,20 +73,22 @@
 
     
         <section id="hero">
-
             <div class="texto">
                 <div>
-                <h2 class="title">Empezá a trabajar <br> de lo que siempre <br>soñaste!</h2>
-                <p class="subtitle">Queremos ayudarte a cumplir tus sueños. <br>Con nuestros cursos online aprendé <br> cuando quieras, donde sea.</p>
-                <ul class="puntos">
-                    <li> <i class="fa fa-check" aria-hidden="true"></i>  Clases online de capacitación laboral</li>
-                    <li> <i class="fa fa-check" aria-hidden="true"></i>  Docentes en vivo</li>
-                    <li> <i class="fa fa-check" aria-hidden="true"></i>  Certificados oficiales con QR</li>
-
-                </ul>
-                </div>
-                <div>
-                
+                    <h2 class="title">Contamos con una <br>variada oferta de<br>cursos para vos!</h2>
+                    <p class="subtitle">Te habilitamos como estudiante<br>para trabajar con obras <br>sociales y prepagas.</p>
+                    <div class="container-puntos">
+                        <ul class="puntos">
+                            <li class="punto"> <i class="fa fa-check" aria-hidden="true"></i>  Cursos cortos</li>
+                            <li class="punto"> <i class="fa fa-check" aria-hidden="true"></i>  Aranceles accesibles</li>
+                            <li class="punto"> <i class="fa fa-check" aria-hidden="true"></i>  Certificados oficiales</li>
+                        </ul>
+                        <ul class="puntos">
+                            <li class="punto"> <i class="fa fa-check" aria-hidden="true"></i>  Rápida salida laboral</li>
+                            <li class="punto"> <i class="fa fa-check" aria-hidden="true"></i>  Docentes en vivo</li>
+                            <li class="punto"> <i class="fa fa-check" aria-hidden="true"></i>  Inscripciones abiertas!</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -94,8 +99,7 @@
                 <!--img src="./Forma1.png" alt="forma" class="img-forma1"-->
                 <img src="./backg2.jpg" alt="estudiante" class="imagen">
                 
-            </div>
-                
+            </div>  
         </section>
 
         <div class="portada-categorias">
@@ -106,7 +110,7 @@
                             <i class="fa fa-laptop cardcate-icon cardcate-icon-bg-o" aria-hidden="true"></i>
                             <h5 class="titulo-carta">Cursos</h5>
                             <p class="font-desc-lg">
-                                3, 4, 6 y 9 meses de duración
+                                De 8 meses de duración
                              </p>
                         </div>
                     </div>
@@ -131,136 +135,136 @@
                 </div>
             </div>
         </div>
-        
 
-        <section id="cursos">
+        <div class="container-cursos">
             <a name="ancla-cursos"></a>
-            <div class="info">
-                
-                 <img class="infoimg" src="./0at.png" alt="imagen at">
-                 <div class="infotxt">
-                 <p>El acompañante terapéutico es un auxiliar de salud, con conocimientos teórico–prácticos, 
-                    que actúa en el marco de un equipo interdisciplinario 
-                    elaborando estrategias de tratamiento no farmacológico y asistiendo 
-                    de forma personalizada a la persona con padecimiento mental y a su familia. 
-                </p>
-                 <a href="infoat">+INFO</a>
+            <div class="titulo-cursos">
+                <div class="texto-titulo-cursos">
+                    <h6 class="subtitulo-seccion">NUESTROS CURSOS</h6>
+                </div>
+                <p class="subtitle2">Cursos Online con rápida salida laboral <br> Diplomas habilitantes con Validez Nacional y código QR</p>
+            </div>
+        </div>
+
+        <div class="slider-box">
+            <div class="swiffy-slider">
+                <ul class="slider-container">
+                    <li><img class="img-slide" src="./0at.png" style="max-width: 100%;height: auto;"></li>
+                    <li><img class="img-slide" src="./0et.png" style="max-width: 100%;height: auto;"></li>
+                    <li><img class="img-slide" src="./0ie.png" style="max-width: 100%;height: auto;"></li>
+                    <li><img class="img-slide" src="./0mj.png" style="max-width: 100%;height: auto;"></li>
+                    <li><img class="img-slide" src="./0pedag.png" style="max-width: 100%;height: auto;"></li>
+                    <li><img class="img-slide" src="./0aj.png" style="max-width: 100%;height: auto;"></li>
+                    <li><img class="img-slide" src="./0tea.png" style="max-width: 100%;height: auto;"></li>
+                    <li><img class="img-slide" src="./0ec.png" style="max-width: 100%;height: auto;"></li>
+                </ul>
+            
+                <button type="button" class="slider-nav"></button>
+                <button type="button" class="slider-nav slider-nav-next"></button>
+            
+                <div class="slider-indicators">
+                    <button class="active"></button>
+                    <button></button>
+                    <button></button>
                 </div>
             </div>
-        
+        </div>
 
-
-        
-            <div class="info">
-                
-                <img class="infoimg" src="./0ie.png" alt="imagen integracion escolar">
-                <div class="infotxt">
-                    <p>La integración escolar es una estrategia educativa valiosa, que da respuesta a las necesidades educativas de sujetos con discapacidad. 
-                    Se ha ido instalando de manera significativa en las escuelas 
-                    y presenta una complejidad que nos lleva a dejar de lado cualquier intento de simplificación. 
-                    </p>
-                    <a href="infoie">+INFO</a>
+        <div class="container-nosotros">
+            <a name="ancla-nosotros"></a>
+            <div class="titulo-cursos">
+                <div class="texto-titulo-cursos">
+                    <h6 class="subtitulo-seccion">NOSOTROS</h6>
                 </div>
+                <p class="subtitle2">Te invitamos a conocer más sobre nosotros</p>
             </div>
-        
+            <div class="container-tarjetas">
+                <div class="tarjeta">
+                    <div class="cuerpo-tarjeta">
+                        <div class="icon-tarjeta">
+                            <span>1</span>
+                        </div>
+                        <div class="texto-tarjeta">
+                            <h4>Cursos cortos</h4>
+                            <p>En Instituto Paulo Freire contamos con una variada oferta de cursos: 
+                            Estimulación Temprana, Integración Escolar (Maestro/a Integrador/a),
+                            Introducción a la Psicopedagogía y Auxiliar de Sala, entre otros.</p>
+                        </div>
+                    </div>
 
-
-            
-            <div class="info">
-                
-                <img class="infoimg" src="./0et.png" alt="imagen estimulacion temprana">
-                <div class="infotxt">
-                    <p>La estimulación temprana se define como un conjunto de acciones que potencializan al máximo las habilidades físicas, 
-                            mentales y psicosociales del niño, mediante la estimulación repetitiva, continua y sistematizada. 
-                    </p>
-                    <a href="infoet">+INFO</a>
                 </div>
-            </div>
-            
-
-            
-
-            
-            <div class="info">
-                
-                <img class="infoimg" src="./0mj.png" alt="imagen auxiliar maestra jardinera">
-                <div class="infotxt">
-                    <p>Este curso se orienta al cuidado, acompañamiento y recreación de niños en edad pre-escolar. 
-                        Para ello, aprenderás a identificar las características del niño en cada etapa de su desarrollo, 
-                        sus aspectos madurativos, intelectuales y afectivos; y sus periodos de adaptación.
-                    </p>
-                    <a href="infomj">+INFO</a>
+                <div class="tarjeta">
+                    <div class="cuerpo-tarjeta">
+                        <div class="icon-tarjeta">
+                            <span>2</span>
+                        </div>
+                        <div class="texto-tarjeta">
+                            <h4>Rápida Salida Laboral</h4>
+                            <p>Nuestra propuesta de formación es ofrecer cursos cortos orientados 
+                            al ámbito de la Salud y la Educación, con excelente inserción laboral. 
+                            No se requieren estudios previos.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-
-            
-
-            
-            <div class="info">
-                
-                <img class="infoimg" src="./0pedag.png" alt="imagen pedagogia y auxiliar de sala">
-                <div class="infotxt">
-                    <p>En la actualidad gran cantidad de niños y adolescentes tienen problemas con el rendimiento escolar. 
-                        Se brindarán estrategias, conocimientos y recursos pedagógicos, destinados a asegurar un proceso 
-                        educativo integral, flexible y dinámico a personas con necesidades educativas especiales, temporales o permanentes.
-                    </p>
-                    <a href="infopedag">+INFO</a>
+                <div class="tarjeta">
+                    <div class="cuerpo-tarjeta">
+                        <div class="icon-tarjeta">
+                            <span>3</span>
+                        </div>
+                        <div class="texto-tarjeta">
+                            <h4>Se Entregan Diplomas</h4>
+                            <p>Todos nuestros cursos entregan al estudiante su Diploma 
+                            con el detalle de 136 horas cursadas. Esto habilita al 
+                            estudiante a trabajar con obras sociales y prepagas. Validez nacional.</p>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
-            
-
-            
-
-            
-            <div class="info">
-                
-                <img class="infoimg" src="./0aj.png" alt="imagen asistente juridico">
-                <div class="infotxt">
-                    <p>Este curso brinda las competencias para realizar funciones de atención al público, 
-                        programación de citas y entrevistas judiciales, seguimiento de causas informando avances o posibles contratiempos, 
-                        elaborar escritos jurídicos, tramitar causas en tribunales y mucho más.
-                    </p>
-                    <a href="infoaj">+INFO</a>
+                <div class="tarjeta">
+                    <div class="cuerpo-tarjeta">
+                        <div class="icon-tarjeta">
+                            <span>4</span>
+                        </div>
+                        <div class="texto-tarjeta">
+                            <h4>Cursada 100% Virtual</h4>
+                            <p>Los cursos son dictados por profesionales recibidos y con 
+                            experiencia en cada especialidad. Grupos reducidos. 
+                            Empezamos todos los meses un nuevo grupo.</p>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
-            
-
-            
-
-            
-            <div class="info">
-                
-                <img class="infoimg" src="./0tea.png" alt="imagen intevencion en autismo">
-                <div class="infotxt">
-                    <p>El taller permite conocer los aspectos del trastorno del espectro autista en su totalidad, la detección e intervención temprana,
-                        el desarrollo cognitivo, social y comunicativo del niño con TEA, sus necesidades educativas y la actuación en el ámbito familiar y educativo.
-                    </p>
-                    <a href="infotia">+INFO</a>
+                <div class="tarjeta">
+                    <div class="cuerpo-tarjeta">
+                        <div class="icon-tarjeta">
+                            <span>5</span>
+                        </div>
+                        <div class="texto-tarjeta">
+                            <h4>Aranceles Accesibles</h4>
+                            <p>El valor de la cuota incluye materiales. Aceptamos Mercado Pago. 
+                            Además, abonando el curso en un sólo pago accedes a un descuento. 
+                            Precio promocional por inscribirse en 2 cursos o más</p>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
-                
-            
-
-            
-
-            
-            <div class="info">
-                
-                <img class="infoimg" src="./0ec.png" alt="imagen estimulacion cognitiva">
-                <div class="infotxt">
-                    <p>El desarrollo de las capacidades cognitivas de los niños es crucial para mejorar los procesos de aprendizaje y el desempeño académico en la infancia y adolescencia.
-                        La estimulación cognitiva puede, por una parte, reforzar las conexiones neuronales existentes y, por otra parte, apoyar la generación de sinapsis y circuitos neuronales nuevos. 
-                        A esto, se le suma la mirada de las inteligencias múltiples, que permiten saber qué áreas son de interés al niño para hacer hincapié en los procesos de aprendizajes.
-                    </p>
-                    <a href="infoeg">+INFO</a>
+                <div class="tarjeta">
+                    <div class="cuerpo-tarjeta">
+                        <div class="icon-tarjeta">
+                            <span>6</span>
+                        </div>
+                        <div class="texto-tarjeta">
+                            <h4>Inscripciones Abiertas</h4>
+                            <p>Contactanos hoy para hacer tu consulta y reservá tu lugar.
+                            ¡Ya estamos inscribiendo!</p>
+                        </div>
+                    </div>
+                    
                 </div>
+       
             </div>
-            </section>
-
-        
-
-        <hr>
+        </div>
+         <hr>
 
         <footer>
             
@@ -279,6 +283,26 @@
                 toggleBtnIcon.classList = isOpen
                 ? 'fa-solid fa-xmark'
                 : 'fa-solid fa-bars'
+            }
+        </script>
+        <script>
+             //navBar sticky
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
             }
         </script>
 
