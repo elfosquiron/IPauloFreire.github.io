@@ -164,7 +164,7 @@ header{
     right: 1.4rem;
     height: 0;
     width: 300px;
-    background-color: #4dacafea;
+    background-color: #d9ddddea;
     /*backdrop-filter: blur(15px);*/
     border-radius: 10px;
     overflow: hidden;
@@ -175,7 +175,7 @@ header{
 }
 
 .dropdown_menu.open{
-    height: 250px;
+    height: 300px;
 }
 
 .dropdown_menu .action_btn{
