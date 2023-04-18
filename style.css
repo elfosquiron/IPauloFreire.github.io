@@ -135,11 +135,11 @@ header{
 .action_btn{
     background-color:#004AAD;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.7rem;
     border: none;
     outline: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
+    border-radius: 15px;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
