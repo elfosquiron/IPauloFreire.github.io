@@ -49,11 +49,23 @@ header{
 }
 
 .navbar-container{
+    z-index: 2;
     display: block;
     width: 100%;
     background-color: #0b2d3d;
-   
+    overflow: hidden;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
 .navbar{
     /*backdrop-filter: blur(3px);*/
     background-color: #ffffff;
@@ -186,11 +198,12 @@ section#hero {
     padding-top: 100px;
     padding-bottom: 150px;
     background-color: rgba(235,235,242,0.55);
-    height: calc(100vh - 60px);
+    height: auto;
     display: flex;
     flex-direction:row;
     align-items: start;
     justify-content:center;
+    position: relative;
     
 }
 
@@ -227,7 +240,7 @@ h3{
 
 p{
     color: #004AAD;
-    max-width: 350px;
+    max-width: 450px;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -317,18 +330,29 @@ p{
 }
 
 .subtitle{
-    max-width: 525px;
+    max-width: 650px;
     color: #666575;
     font-size: 22px;
     line-height: 30px;  
+}
 
+.container-puntos{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .puntos{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
+        --bs-gutter-x: 5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: calc(var(--bs-gutter-x)*-.5);
+        margin-right: calc(var(--bs-gutter-x)*-.5);
+        margin-top: calc(var(--bs-gutter-y)*-1);
+    }
+
 
 .puntos li{
     color: #666575;
@@ -340,6 +364,9 @@ p{
     font-weight: 25px;
 }
 
+.punto{
+    position: relative;
+}
 
 .portada-categorias{
     position: relative;
@@ -411,7 +438,140 @@ footer{
     align-items: center;
 }
 
+/*cursos*/
+.slider-nav{
+    color: #004AAD;
+}
 
+.slider-box{
+    align-self: center;
+    max-width: 80%;
+}
+
+.swiffy-slider{
+    margin-top: 50px;
+    width: 1280px;
+    text-align: center;
+    }
+
+
+.img-slide{
+    padding: 10px;
+    align-self: center;
+    background-color: #66afdd;
+    border-radius: 10px;
+}
+
+.container-cursos{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.titulo-cursos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.texto-titulo-cursos{
+    top: -5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+/*nosotros*/
+.container-nosotros{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    clip-path: ellipse(100% 100% at 50% 100%);
+    background-color: rgba(235,235,242,0.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.subtitulo-seccion{
+    display: flex;
+    align-self: center;
+    background-color:#004AAD;
+    color: #fff;
+    padding: 0.9rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.subtitle2{
+    align-self: center;
+    text-align: center;
+    max-width: 650px;
+    color: #666575;
+    font-size: 22px;
+    line-height: 30px; 
+}
+
+.container-tarjetas{
+    align-self: center;
+    max-width: 1200px;
+    /*--bs-gutter-x: 2.5rem;
+    --bs-gutter-y: 0;*/
+    display: flex;
+    flex-wrap: wrap;
+    /*margin-left: calc(var(--bs-gutter-x)*-.5);
+    margin-right: calc(var(--bs-gutter-x)*-.5);*/
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.tarjeta{
+    margin-bottom: 20px;
+    max-width: 100%;
+    align-self: center;
+    /*margin-top: var(--bs-gutter-y);
+    padding-left: calc(var(--bs-gutter-x)*.5);
+    padding-right: calc(var(--bs-gutter-x)*.5);*/
+}
+
+.cuerpo-tarjeta{
+    display: flex;
+}
+
+.icon-tarjeta{
+    background-color: rgba(240,128,0,.1);
+    color: #004AAD;
+    height: 2.4em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    border-radius: 50rem;
+    padding: 0.7em 1.15em;
+    --bs-badge-padding-x: .75rem;
+    --bs-badge-padding-y: .25rem;
+    --bs-badge-font-size: .75em;
+    --bs-badge-font-weight: 600;
+    --bs-badge-color: #fff;
+    --bs-badge-border-radius: .375rem;
+    display: inline-block;
+    font-size: var(--bs-badge-font-size);
+    font-weight: var(--bs-badge-font-weight);
+    line-height: 1;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    --bs-gutter-x: 2.5rem;
+    --bs-gutter-y: 0;
+
+}
+
+.texto-tarjeta{
+    margin-left: 1.5rem;
+}
 /*CERTIFICADOS*/
 
 table{text-align: center; display: flex; flex-direction: column;}
@@ -440,13 +600,20 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
     display: flex;
     align-items: center;
     text-align: center;
+    background: no-repeat center/100% url("./bgpoints.jpg");
+    background-attachment: scroll;
 }
 
 
 /*RESPONSIVE DESIGN*/
 
 
-@media(max-width: 1200px){
+@media(max-width: 1300px){
+    .slider-box{
+        align-self: normal;
+        max-width: 100%;
+    }
+
     section#hero{
         padding-top: 50px;
         height: auto;
@@ -471,6 +638,10 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
 
 }
 @media(max-width: 800px){
+    .container-nosotros{
+        clip-path: none;
+    }
+
     .navbar .links,
     .navbar .action_btn{
         display: none;
@@ -524,7 +695,18 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
 
 }
 @media (max-width: 480px){
+   
 
+    .container-puntos{
+        display: flex;
+        flex-direction: column;
+        align-content: left;
+    }
+
+    .puntos{
+        --bs-gutter-x: 0rem;
+        
+    }
     .navbar{
         height: 70px;
     }
@@ -535,13 +717,20 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
     }
 
     .subtitle{
-        padding-top: 15px;
+        padding: 15px;
         font-size: 15px;
-        line-height: 15px;
+        line-height: 20px;
     }
 
-    .infoimg{
-        padding: 12px;
+   .subtitle2{
+        padding: 15px;
+        font-size: 18px;
+        line-height: 25px;
+   }
+
+
+
+    .card-img-top{
         height: 300px;
         width: 400px;
     }
@@ -579,8 +768,7 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
 
     
    
-    .infoimg{
-        padding: 15px;
+    .card-img-top{
         height: 275px;
         width: 350px;
     }
@@ -593,8 +781,7 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
 }
 
 @media (max-width: 350px){
-    .infoimg{
-        padding: 5px;
+    .card-img-top{
         height: 200px;
         width: 250px;
     }
