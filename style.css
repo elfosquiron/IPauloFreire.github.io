@@ -157,6 +157,7 @@ header{
 /*body*/
 
 
+
 /*dropdown menu*/
 .dropdown_menu{
     display: none;
@@ -237,10 +238,13 @@ h3{
    
 }
 
+section#hero p{
+    max-width: 450px;
+}
+
 
 p{
-    color: #004AAD;
-    max-width: 450px;
+    color:#666575;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -414,12 +418,6 @@ p{
     border: 1px solid #ebebf2;
 
 }
-.cursos{
-    margin:10px;
-    width: 100%;
-    display: flex;
-}
-
 
 
 .main-logo{
@@ -469,10 +467,23 @@ footer{
     margin-top: 50px;
 }
 .titulo-cursos{
+    border: 5px solid #c5c3c3;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+.titulo-cursos ul{
+    max-width: 1000px;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo-cursos li{
+    text-align: left;
 }
 
 .texto-titulo-cursos{
@@ -483,6 +494,51 @@ footer{
     align-content: center;
     text-align: center;
 }
+
+.cursos{
+    margin:10px;
+    width: 100%;
+    display: flex;
+}
+
+.portada-curso{
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+}
+
+.portada-curso h1{
+    color:#013374;
+
+}
+
+
+.container-infocurso{
+    background-color:#ebebf2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+    
+}
+
+.container-infocurso p{
+    max-width: 1000px;
+} 
+
+.subtitle3{
+    max-width: 650px;
+    color: #666575;
+    font-size: 22px;
+    line-height: 30px; 
+}
+
+
 
 /*nosotros*/
 .container-nosotros{
@@ -495,6 +551,12 @@ footer{
     justify-content: center;
     margin-top: 50px;
 }
+
+.container-nosotros p{
+    max-width: 450px
+}
+
+
 
 .subtitulo-seccion{
     display: flex;
@@ -634,6 +696,14 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
         padding-right: 10px;
     }
 
+    .subtitle3{
+        align-self: center;
+        max-width: 650px;
+        color: #666575;
+        font-size: 18px;
+        line-height: 30px; 
+    }
+
 
 
 }
@@ -653,6 +723,14 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
 
     .dropdown_menu{
         display: block;
+    }
+
+    .subtitle3{
+        align-self: center;
+        max-width: 650px;
+        color: #666575;
+        font-size: 15px;
+        line-height: 30px; 
     }
 
     section#hero{
@@ -695,6 +773,7 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
 
 }
 @media (max-width: 480px){
+
    
 
     .container-puntos{
@@ -728,7 +807,13 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
         line-height: 25px;
    }
 
-
+   .subtitle3{
+    align-self: center;
+    max-width: 650px;
+    color: #666575;
+    font-size: 15px;
+    line-height: 30px; 
+}
 
     .card-img-top{
         height: 300px;
