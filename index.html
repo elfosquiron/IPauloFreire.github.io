@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&family=Poppins&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./whatsapp.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./loguete.scss">
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <title>Paulo Freire Instituto</title>
@@ -22,15 +23,16 @@
     <i class="fa fa-whatsapp my-float"></i>
     </a>
     <header>
+        <a name="top"></a>
         <div></div>
         <div class="navbar-container">
             <div class="navbar-top">
                 <div class="social-media">
                     <p>Seguinos: </p>
-                    <a class="social-icon" href="https://www.instagram.com/i_paulofreire">
+                    <a class="social-icon" href="https://www.instagram.com/i_paulofreire" target="_blank">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a class="social-icon" href="https://www.facebook.com/IPFreireOnline/">
+                    <a class="social-icon" href="https://www.facebook.com/IPFreireOnline/" target="_blank">
                         <i class="fab fa-facebook"></i>
                     </a>
                 </div>
@@ -52,7 +54,7 @@
                     <li><a href="#ancla-contacto">CONTACTO</a></li>
                     <!--li><a href="./certificados.html">Certificados</a></li-->
                 </ul>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqiQea_KVITxVRD4LKvveddTkx2hc-XiGwzx3k-_Z1xBJdQQ/viewform?usp=sf_link" class="action_btn">Inscribite</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqiQea_KVITxVRD4LKvveddTkx2hc-XiGwzx3k-_Z1xBJdQQ/viewform?usp=sf_link" class="action_btn" target="_blank">Inscribite</a>
                 <div class="toggle_btn">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -63,7 +65,7 @@
                     <li class="nav-item"><a href="#ancla-nosotros">Nosotros</a></li>
                     <li class="nav-item"><a href="#ancla-cursos">Cursos</a></li>
                     <li class="nav-item"><a href="#ancla-contacto">Contacto</a></li>
-                    <li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeqiQea_KVITxVRD4LKvveddTkx2hc-XiGwzx3k-_Z1xBJdQQ/viewform?usp=sf_link" class="action_btn">Inscribite</a></li>
+                    <li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeqiQea_KVITxVRD4LKvveddTkx2hc-XiGwzx3k-_Z1xBJdQQ/viewform?usp=sf_link" target="_blank" class="action_btn">Inscribite</a></li>
             </div>
         </div>
     </header>
@@ -74,7 +76,7 @@
         <section id="hero">
             <div class="texto">
                 <div>
-                    <h2 class="title">Contamos con una <br>variada oferta de<br>cursos para vos!</h2>
+                    <h2 class="title home-title"><span> Contamos con una <br>variada oferta de<br>cursos para vos!</h2> </span>
                     <p class="subtitle">Te habilitamos como estudiante<br>para trabajar con obras <br>sociales y prepagas.</p>
                     <div class="container-puntos">
                         <ul class="puntos">
@@ -102,7 +104,7 @@
         </section>
 
         <div class="portada-categorias">
-            <div class="container">
+            <div class="categorias-container">
                 <div class="categoria-row">
                     <div class="box-categoria">
                         <div class="carta-categoria">
@@ -137,16 +139,18 @@
         <a name="ancla-cursos"></a>
         <div class="container-cursos">
             
-            <div class="titulo-cursos">
+            <div class="titulo-seccion">
                 <div class="texto-titulo-cursos">
                     <h6 class="subtitulo-seccion">NUESTROS CURSOS</h6>
                 </div>
-                <p class="subtitle2">Cursos Online con rápida salida laboral <br> Diplomas habilitantes con Validez Nacional y código QR</p>
+                <p class="subtitle2">Cursos Online con rápida salida laboral.<br> Diplomas habilitantes con Validez Nacional y código QR.</p>
             </div>
         </div>
 
         <div class="slider-box">
-            <div class="swiffy-slider slider-nav-autoplay slider-nav-arrow slider-nav-dark slider-nav-outside slider-nav-scrollbar slider-nav-visible slider-nav-touch slider-indicators-round slider-indicators-dark slider-indicators-outside slider-nav-animation slider-nav-animation-appear slider-nav-animation-slow"  data-slider-nav-autoplay-interval="4000">
+            <div class="swiffy-slider slider-nav-autoplay slider-nav-arrow slider-nav-dark slider-nav-outside
+             slider-nav-scrollbar slider-nav-visible slider-nav-touch slider-indicators-round slider-indicators-dark
+              slider-indicators-outside slider-nav-animation slider-nav-animation-appear slider-nav-animation-slow"  data-slider-nav-autoplay-interval="8000">
                 <ul class="slider-container">
                     <li><img class="img-slide" src="./0at.png" style="max-width: 100%;height: auto;"></li>
                     <li><img class="img-slide" src="./0et.png" style="max-width: 100%;height: auto;"></li>
@@ -168,10 +172,83 @@
                 </div>
             </div>
         </div>
+
+        <div class="container-cursos">
+            
+            <div class="titulo-seccion">
+                <div class="texto-titulo-cursos">
+                    <h6 class="subtitulo-seccion">INSCRIPCIONES ABIERTAS!</h6>
+                </div>
+                <p class="subtitle2">Contactanos hoy para hacer tu consulta y reservá tu lugar. </p>
+            </div>
+        </div>
+
+
+        <div class="container-infocursos">
+            <div class="container-curso gris">
+                <a href="./Acompañante_terapeutico.html"><img class="infoimg" src="./0at.png" alt="image-at"></a>
+                <p class="resumen-curso">El acompañante terapéutico es un auxiliar de salud, con conocimientos teórico–prácticos,
+                    que actúa en el marco de un equipo interdisciplinario elaborando estrategias de tratamiento no farmacológico
+                     y asistiendo de forma personalizada a la persona con padecimiento mental y a su familia.</p>
+                     <a href="./Acompañante_terapeutico.html">+INFO</a>
+            </div>
+            <div class="container-curso gris">
+                <a href="./Estimulacion_temprana.html"><img class="infoimg" src="./0et.png" alt="image-at"></a>
+                <p class="resumen-curso">La estimulación temprana se define como un conjunto de acciones que
+                    potencializan al máximo las habilidades físicas, mentales y psicosociales del niño,
+                    mediante la estimulación repetitiva, continua y sistematizada.</p>
+                <a href="./Estimulacion_temprana.html">+INFO</a>
+            </div>
+            <div class="container-curso gris">
+                <a href="./Integracion_escolar.html"><img class="infoimg" src="./0ie.png" alt="image-at"></a>
+                <p class="resumen-curso">La integración escolar es una estrategia educativa valiosa, que da respuesta
+                    a las necesidades educativas de sujetos con discapacidad, que si bien tiene pocos años de desarrollo,
+                     se ha ido instalando de manera significativa en las escuelas.</p>
+                <a href="./Integracion_escolar.html">+INFO</a>
+            </div>
+            <div class="container-curso gris">
+                <a href="./Auxiliar_maestra_jardinera.html"><img class="infoimg" src="./0mj.png" alt="image-at"></a>
+                <p class="resumen-curso">El rol del auxiliar es un apoyo al docente, con una base sólida en conocimientos teóricos y prácticos,
+                    herramientas y estrategias metodológicas elementales a la hora de trabajar con niños.</p>
+                <a href="./Auxiliar_maestra_jardinera.html">+INFO</a>
+            </div>
+            <div class="container-curso gris">
+                <a href="./Autismo_TEA.html"><img class="infoimg" src="./0tea.png" alt="image-at"></a>
+                <p class="resumen-curso">El Trastorno del Espectro Autista tiene sus características especiales.
+                    Conocerlas y adquirir estrategias para una nueva mirada al niño con autismo, su familia y su entorno.
+                    Aprender la forma que tienen de entender el mundo, de procesar la información,
+                    de sentir y de percibir es clave al momento de intervenir con una persona con este tipo de trastorno.</p>
+                <a href="./Autismo_TEA.html">+INFO</a>
+            </div>
+            <div class="container-curso gris">
+                <a href="./Estimulacion_cognitiva.html"><img class="infoimg" src="./0ec.png" alt="image-at"></a>
+                <p class="resumen-curso">La estimulación cognitiva puede, por una parte, reforzar las conexiones neuronales existentes y,
+                    por otra parte, apoyar la generación de sinapsis y circuitos neuronales nuevos.
+                     A esto, se le suma la mirada de las inteligencias múltiples, que permiten saber qué áreas
+                      son de interés al niño para hacer hincapié en los procesos de aprendizajes.</p>
+                <a href="./Estimulacion_cognitiva.html">+INFO</a>
+            </div>
+            <div class="container-curso gris">
+                <a href="./Asistente_juridico.html"><img class="infoimg" src="./0aj.png" alt="image-at"></a>
+                <p class="resumen-curso">En este curso vas a adquirir las habilidades necesarias para trabajar como asistente o auxiliar en un estudio jurídico.
+                    Vas a aprender sobre Derecho Procesal Civil, Derecho Laboral, y Familia y Sucesiones, todo desde un punto de vista práctico y aplicado a la realidad.</p>
+                <a href="./Asistente_juridico.html">+INFO</a>
+            </div>
+            <div class="container-curso gris">
+                <a href="./Psicopedagogia.html"><img class="infoimg" src="./0pedag.png" alt="image-at"></a>
+                <p class="resumen-curso">En la actualidad gran cantidad de niños y adolescentes tienen problemas con el rendimiento escolar.
+                    Se brindarán estrategias, conocimientos y recursos pedagógicos, destinados a asegurar un proceso educativo integral,
+                    flexible y dinámico a personas con necesidades educativas especiales, temporales o permanentes.
+                </p>
+                <a href="./Psicopedagogia.html">+INFO</a>
+            </div>
+        </div>
+
+
         <a name="ancla-nosotros"></a>
         <div class="container-nosotros">
             
-            <div class="titulo-cursos">
+            <div class="titulo-seccion">
                 <div class="texto-titulo-cursos">
                     <h6 class="subtitulo-seccion">NOSOTROS</h6>
                 </div>
@@ -266,18 +343,21 @@
 
         <div class="container-cursos">
             <a name="ancla-contacto"></a>
-            <div class="titulo-cursos">
+            <div class="titulo-seccion">
                 <div class="texto-titulo-cursos">
                     <h6 class="subtitulo-seccion">CONTACTANOS!</h6>
                 </div>
                 <p class="subtitle2">Si queres saber más consultanos vía 
-                <a href="https://api.whatsapp.com/send?phone=+5491130048766&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20cursos%202.">Whatsapp</a> 
-                <br> O inscribite haciendo click <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqiQea_KVITxVRD4LKvveddTkx2hc-XiGwzx3k-_Z1xBJdQQ/viewform?usp=sf_link">AQUÍ</a></p>
+                <a href="https://api.whatsapp.com/send?phone=+5491130048766&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20cursos%202." target="_blank">Whatsapp</a> 
+                <br> O inscribite haciendo click <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqiQea_KVITxVRD4LKvveddTkx2hc-XiGwzx3k-_Z1xBJdQQ/viewform?usp=sf_link" target="_blank">AQUÍ</a></p>
             </div>
         </div>
         <br>
         <br>
-         <hr>
+        <hr>
+
+        <a href="#top" class="back"> VOLVER A INICIO</a>
+         
 
         <footer>
             
@@ -298,27 +378,6 @@
                 : 'fa-solid fa-bars'
             }
         </script>
-        <script>
-             //navBar sticky
-            // When the user scrolls the page, execute myFunction
-            window.onscroll = function() {myFunction()};
-
-            // Get the navbar
-            var navbar = document.getElementById("navbar");
-
-            // Get the offset position of the navbar
-            var sticky = navbar.offsetTop;
-
-            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-            function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-            }
-        </script>
-
     </main>
 </body>
 </html>
