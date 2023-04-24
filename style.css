@@ -9,6 +9,8 @@ html{
     font-family: 'poppins', sans-serif;
 }
 
+
+
 body{
     /*width: 100%;*/
     height: 100vh;
@@ -111,6 +113,12 @@ header{
 
 }
 
+/*try*/
+
+
+
+/*endtry*/
+
 .navbar-logo{
     padding-top: 10px;
     z-index: -3;
@@ -139,7 +147,7 @@ header{
     border: none;
     outline: none;
     border-radius: 15px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
@@ -198,7 +206,7 @@ section#hero {
     clip-path: ellipse(100% 100% at 50% 0%);
     padding-top: 100px;
     padding-bottom: 150px;
-    background-color: rgba(235,235,242,0.55);
+    background-color: rgb(235,235,242);
     height: auto;
     display: flex;
     flex-direction:row;
@@ -207,6 +215,91 @@ section#hero {
     position: relative;
     
 }
+
+/*try*/
+
+/* Basic styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+    --bg-color: rgb(235, 235, 242);
+}
+
+/*body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  color: #000;
+  background-color: var(--bg-color);
+  font-family: 'Maitree', serif;
+}*/
+
+/*h1{
+    font-size: 3em;
+    font-weight: normal;
+}
+
+/* title styles */
+.home-title span{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+}
+
+
+.home-title span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(235, 235, 242, 0.411);
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.home-title span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.home-title span:nth-of-type(1)::before,
+.home-title span:nth-of-type(1)::after{
+    animation-delay: 1s;
+}
+
+.home-title span:nth-of-type(2)::before,
+.home-title span:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+}
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+
+/*try*/
 
 h2{
     
@@ -273,16 +366,6 @@ p{
     color: #fff;
 }
 
-.img-forma1{
-    top: -23px;
-    overflow: hidden;
-    position: absolute;
-    height: 700px;
-    width: 1000px;
-    z-index: -1;
-    
-}
-
 
 .info{
     display: flex;
@@ -294,15 +377,6 @@ p{
     
 }
 
-.infoimg{
-    background-color: #69a5f3;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 0.8rem;
-    height: 400px;
-    padding-left: 35px;
-    padding-right: 35px;
-}
 
 .infotxt{
     display: flex;
@@ -331,6 +405,7 @@ p{
     line-height: 75px;
     font-family: 'Palanquin Dark', sans-serif;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
 }
 
 .subtitle{
@@ -344,7 +419,7 @@ p{
     align-self: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .puntos{
@@ -381,7 +456,7 @@ p{
     margin-top: -100px;
 
 }
-.container{
+.categorias-container{
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -428,6 +503,10 @@ p{
     padding-left: 20px;
     padding-right: 20px;
 }
+.back{
+    display: flex;
+    align-self: center;
+}
 
 footer{
     display: flex;
@@ -435,6 +514,18 @@ footer{
     text-align: center;
     align-items: center;
 }
+/*secciones*/
+.titulo-seccion{
+    /*border: 5px solid #c5c3c3;*/
+    padding: 30px;
+    border-radius: 10px;
+    /*margin-top: 50px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
 
 /*cursos*/
 .slider-nav{
@@ -460,7 +551,14 @@ footer{
     border-radius: 10px;
 }
 
+.container-infocurso{
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .container-cursos{
+    align-self: center;
     display: flex;
     flex-direction: wrap;
     justify-content: center;
@@ -475,9 +573,13 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    max-width: 1000px;
+    align-self: center;
 }
 .titulo-cursos ul{
-    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
     justify-content: center;
     text-align: center;
 }
@@ -506,6 +608,7 @@ footer{
     justify-content: center;
     margin-top: 50px;
     display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -515,27 +618,79 @@ footer{
 }
 
 
-.container-infocurso{
-    background-color:#ebebf2;
-    display: flex;
-    flex-direction: column;
+.container-infocursos{
+    align-self: center;
     justify-content: center;
-    margin-top: 50px;
-    align-items: center;
-    text-align: left;
-    padding: 15px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
-.container-infocurso p{
-    max-width: 1000px;
-} 
+.container-curso{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    /*border: 5px solid #c5c3c3;
+    padding: 30px;
+    border-radius: 10px;*/
+    margin: 30px;
+}
+
+.container-curso a{
+    align-self: center;
+}
+
+.infoimg{
+    align-self: center;
+    background-color: #69a5f3;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 0.8rem;
+    width: 400px;
+    height: 300px;
+}
+
+.resumen-curso{
+    align-self: center;
+    max-width: 500px;
+    text-align: left;
+    border: 5px solid #c5c3c3;
+    padding: 30px;
+    border-radius: 10px;
+}
 
 .subtitle3{
     max-width: 650px;
     color: #666575;
     font-size: 22px;
     line-height: 30px; 
+}
+
+.indice-curso{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.indice-curso a{
+    color: #ebebf2;
+    font-size: 15px;
+}
+
+
+
+.item-indice{
+    text-align: center;
+    align-self: center;
+    background-color:#004AAD;
+    color: #fff;
+    margin: 5px;
+    padding: 0.5rem 0.7rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
 }
 
 
@@ -549,13 +704,16 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
 }
 
 .container-nosotros p{
     max-width: 450px
 }
 
+.gris{
+    background-color: rgba(235,235,242,0.55);
+}
 
 
 .subtitulo-seccion{
@@ -697,7 +855,8 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
     }
 
     .subtitle3{
-        align-self: center;
+        text-align: left;
+        align-self: left;
         max-width: 650px;
         color: #666575;
         font-size: 18px;
@@ -759,7 +918,19 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
     }
 }
 
+@media(max-width: 649px){
+
+    .indice-curso{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 @media(max-width: 576px){
+   
+
     .dropdown_menu{
         left: 2rem;
         width: unset;
@@ -773,7 +944,10 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
 
 }
 @media (max-width: 480px){
-
+    .container-curso{
+        margin-bottom: 25px;
+        padding: 0;
+    }
    
 
     .container-puntos{
@@ -797,7 +971,7 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
 
     .subtitle{
         padding: 15px;
-        font-size: 15px;
+        font-size: 18px;
         line-height: 20px;
     }
 
@@ -846,6 +1020,19 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
         font-size: 15px;
     }
 
+    .infoimg{
+        width: 340px;
+        height: 280px;
+    }
+
+
+    .resumen-curso{
+        font-size: smaller;
+        padding: 10px;
+    }
+
+   
+
     
 }
 
@@ -863,11 +1050,21 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
         width: 280px;
         
     }
+
+    /*.infoimg{
+        width: 260px;
+        height: 200px;
+    }*/
 }
 
 @media (max-width: 350px){
     .card-img-top{
         height: 200px;
         width: 250px;
+    }
+
+     .infoimg{
+        width: 260px;
+        height: 200px;
     }
 }
