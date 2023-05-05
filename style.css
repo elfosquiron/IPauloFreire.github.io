@@ -14,7 +14,7 @@ html{
 body{
     /*width: 100%;*/
     height: 100vh;
-    background-color: rgba(235,235,242,0.55);
+    background-color: rgba(235, 235, 242, 0.329);
     /*background-color: #e2e8f0;*/
     /*background-image: url('./backg1.jpg');*/
     /*background-size: cover;*/
@@ -122,8 +122,8 @@ header{
 .navbar-logo{
     padding-top: 10px;
     z-index: -3;
-    height: 120px;
-    width: 120px;
+    height: 85px;
+    width: 300px;
 }
 
 
@@ -184,7 +184,7 @@ header{
 }
 
 .dropdown_menu.open{
-    height: 300px;
+    height: 375px;
 }
 
 .dropdown_menu .action_btn{
@@ -206,14 +206,17 @@ section#hero {
     clip-path: ellipse(100% 100% at 50% 0%);
     padding-top: 100px;
     padding-bottom: 150px;
-    background-color: rgb(235,235,242);
+    background-color: rgb(63, 63, 70);
     height: auto;
     display: flex;
     flex-direction:row;
     align-items: start;
     justify-content:center;
     position: relative;
-    
+    background-image: url(./student-online.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /*try*/
@@ -225,9 +228,9 @@ section#hero {
   box-sizing: border-box;
 }
 
-:root{
-    --bg-color: rgb(235, 235, 242);
-}
+/*:root{
+    --bg-color: rgba(235, 235, 242, 0.952);
+}*/
 
 /*body {
   display: flex;
@@ -252,6 +255,7 @@ section#hero {
     overflow: hidden;
     display: block;
     line-height: 1.2;
+    border-radius: 10px;
 }
 
 
@@ -388,14 +392,14 @@ p{
 
 .texto{
     position: relative;
-    right: -80px;
+    /*right: -80px;*/
     display: flex;
     justify-content: center;
     width: 58.3333333%;
 }
 
 .title{
-    color: #013374;
+    color: #ffffff;
     margin-block-start: 0px;
     margin-block-end: -0.3em;
     margin-inline-start: 0px;
@@ -410,31 +414,33 @@ p{
 
 .subtitle{
     max-width: 650px;
-    color: #666575;
-    font-size: 22px;
+    color: #e9e9eb;
+    font-size: 25px;
     line-height: 30px;  
+    /*font-weight: bold;*/
 }
 
 .container-puntos{
     align-self: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
 }
 
 .puntos{
+        margin-right: 5px;
         --bs-gutter-x: 5rem;
         --bs-gutter-y: 0;
         display: flex;
         flex-direction: column;
-        margin-left: calc(var(--bs-gutter-x)*-.5);
+        /*margin-left: calc(var(--bs-gutter-x)*-.5);
         margin-right: calc(var(--bs-gutter-x)*-.5);
-        margin-top: calc(var(--bs-gutter-y)*-1);
+        margin-top: calc(var(--bs-gutter-y)*-1);*/
     }
 
 
 .puntos li{
-    color: #666575;
+    color: #e6e5e5;
 }
 
 .puntos i{
@@ -534,7 +540,7 @@ footer{
 
 .slider-box{
     align-self: center;
-    max-width: 80%;
+    max-width: 60%;
 }
 
 .swiffy-slider{
@@ -841,6 +847,7 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
         flex-direction:column-reverse;
         justify-content: center;
         align-items: center;
+        background-position:initial;
     }
 
     .main-logo, .texto{
@@ -850,8 +857,8 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
         width: 100%;
         right: 0;
         margin-top: 0;
-        padding-left: 10px;
-        padding-right: 10px;
+    /*    padding-left: 10px;
+        padding-right: 10px;*/
     }
 
     .subtitle3{
@@ -970,7 +977,7 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
     }
 
     .subtitle{
-        padding: 15px;
+        /*font-weight:bold;*/
         font-size: 18px;
         line-height: 20px;
     }
@@ -1006,8 +1013,8 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
     .navbar-logo{
         padding-top: 15px;
         z-index: -3;
-        height: 100px;
-        width: 90px;
+        height: 76.5px;
+        width: 225px;
     }
 
     .puntos i{
@@ -1016,9 +1023,10 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
         font-weight: 15px;
     }
 
-    .puntos li{
+   /* .puntos li{
         font-size: 15px;
     }
+    */
 
     .infoimg{
         width: 340px;
