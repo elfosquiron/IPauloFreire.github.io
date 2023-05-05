@@ -869,6 +869,27 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
         font-size: 18px;
         line-height: 30px; 
     }
+   
+}
+
+@media(max-width: 1040px){
+    .container-nosotros{
+        clip-path: none;
+    }
+
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
 
 
 
