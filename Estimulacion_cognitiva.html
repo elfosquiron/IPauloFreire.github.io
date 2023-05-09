@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K6H7W2WN7Q"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+     gtag('config', 'G-K6H7W2WN7Q');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +61,7 @@
                     <li><a href="#ancla-contacto">CONTACTO</a></li>
                     <!--li><a href="./certificados.html">Certificados</a></li-->
                 </ul>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqiQea_KVITxVRD4LKvveddTkx2hc-XiGwzx3k-_Z1xBJdQQ/viewform?usp=sf_link" class="action_btn">Inscribite</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-y8VdwewVU4Gz6DQ-2h8qcSRBr3KKTS4G6JLWneaegQjy2Q/viewform?usp=sf_link" class="action_btn">Inscribite</a>
                 <div class="toggle_btn">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -63,8 +72,7 @@
                     <li class="nav-item"><a href="./index.html#ancla-nosotros">Nosotros</a></li>
                     <li class="nav-item"><a href="#ancla-cursos">Cursos</a></li>
                     <li class="nav-item"><a href="#ancla-contacto">Contacto</a></li>
-                    <li class="nav-item"><a href="./index.html#ancla-certis">Certificados</a></li>
-                    <li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeqiQea_KVITxVRD4LKvveddTkx2hc-XiGwzx3k-_Z1xBJdQQ/viewform?usp=sf_link" class="action_btn">Inscribite</a></li>
+                    <li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc-y8VdwewVU4Gz6DQ-2h8qcSRBr3KKTS4G6JLWneaegQjy2Q/viewform?usp=sf_link" class="action_btn">Inscribite</a></li>
             </div>
         </div>
     </header>
@@ -72,7 +80,9 @@
 
     <main>
         <section class="portada-curso">
-            <h1>TALLER DE ESTIMULACIÓN COGNITIVA</h1>
+            <!--h1>CURSO ESTIMULACIÓN COGNITIVA</h1-->
+            <img src="./0ec.png" alt="Photo-At" style="max-width: 95%;height: auto;">
+            <br>
             <div class="indice-curso">
                 <div class="item-titulo-cursos">
                     <h6 class="item-indice"><a href="#ancla-info">Información General</a> </h6>
@@ -89,12 +99,15 @@
                 <div class="item-titulo-cursos">
                     <h6 class="item-indice"><a href="#ancla-programa">Programa</a> </h6>
                 </div>
+                <div class="item-titulo-cursos">
+                    <h6 class="item-indice"><a href="#ancla-certis">Certificación</a> </h6>
+                </div>
             </div>
         </section>
 
         <a name="ancla-info"></a>
         <div class="container-infocurso">
-            <div class="titulo-cursos">
+            <div class="titulo-cursos" id="sección-infogeneral">
                 <div class="texto-titulo-cursos">
                     <h6 class="subtitulo-seccion">Información General</h6>
                 </div>
@@ -121,7 +134,7 @@
             </div>
 
             <a name="ancla-modalidad"></a>
-            <div class="titulo-cursos">
+            <div class="titulo-cursos" id="sección-modalidad">
                 <div class="texto-titulo-cursos">
                     <h6 class="subtitulo-seccion">Modalidad</h6>
                 </div>
@@ -148,7 +161,7 @@
             </div>
 
             <a name="ancla-objetivos"></a>
-            <div class="titulo-cursos">
+            <div class="titulo-cursos" id="sección-objetivos">
                 
                 <div class="texto-titulo-cursos">
                     <h6 class="subtitulo-seccion">Objetivos</h6>
@@ -180,7 +193,7 @@
             </div>
 
             <a name="ancla-laboral"></a>
-            <div class="titulo-cursos">
+            <div class="titulo-cursos" id="sección-laboral">
                 
                 <div class="texto-titulo-cursos">
                     <h6 class="subtitulo-seccion">Salida Laboral</h6>
@@ -197,7 +210,7 @@
             </div>
 
             <a name="ancla-programa"></a>
-            <div class="titulo-cursos">
+            <div class="titulo-cursos" id="sección-programa">
                 <div class="texto-titulo-cursos">
                     <h6 class="subtitulo-seccion">Programa</h6>
                 </div>
@@ -262,8 +275,66 @@
                     <br>
                 </p>
             </div>
+
+            <a name="ancla-certis"></a>
+            <div class="titulo-cursos" id="sección-certificados">
+                
+                <div class="texto-titulo-cursos">
+                    <h6 class="subtitulo-seccion">Certificados</h6>
+                </div>
+                <p class="subtitle3">
+                    En <b>INSTITUTO PAULO FREIRE</b> brindamos cursos online para aumentar tus conocimientos y
+                     posibilitar una rápida salida laboral. Nuestro marco educativo sigue los fundamentos de la
+                      Educación No Formal, definida como 
+                    <em> “toda actividad organizada, sistemática, educativa,
+                           realizada fuera del marco del sistema oficial, para facilitar determinadas clases de
+                            aprendizaje a subgrupos particulares de la población.”</em>. <br> 
+                    así, mediante clases dictadas en vivo por docentes seleccionados a partir de sus cualidades
+                     humanas, académicas y profesionales, brindamos una educación basada en el compromiso recíproco con
+                      certificación privada,avalada por las siguientes instituciones :
+                </p>
+                <p class="subtitle3">
+                    <b>LA HORA DE LOS PUEBLOS</b>, Centro de Estudios Sociales, Culturales y Políticos. Matrícula
+                     Provincial N° 36194, con dirección Física en Araujo N°3431, Don Orione, Buenos Aires,
+                      Argentina; promoviendo programas educativos que promuevan la participación comunitaria,
+                       favorezcan la inserción en el mercado laboral y el desarrollo de la Educación
+                        Popular.
+                </p>
+                <p class="subtitle3">
+                    <b>CÁMARA ARGENTINA para la FORMACIÓN y la CAPACITACIÓN LABORAL</b>, Asociación
+                        Civil sin fines de lucro, cito en Av de Mayo N 847, Ciudad Autónoma de Buenos Aires, que
+                         reúne los centros de enseñanza, capacitación laboral y profesional en el ámbito de la
+                          educación no formal, Resolución IGJ 2517/17. Ellos fiscalizalizan nuestros programas
+                           temáticos y nuestros docentes, otorgan certificación a nivel nacional a nuestros estudiantes
+                            con la finalidad de: <br>
+                    <em>"promover, fortalecer y legitimar la educación no formal en Argentina,
+                         como una alternativa de inclusión social, desarrollo cultural y democratización del
+                          aprendizaje." </em> <br>
+                    Para chequear esta validez, podes entrar a la página de la 
+                    <a class="little-a" href="https://camaraargentina.com.ar" target="_blank"> Cámara Argentina</a>, <br>
+                     vas a encontrar nuestro instituto y al seleccionar la pestaña
+                      "cursos certificados", y luego "CURSOS AVALADOS POR CAF" verás los cursos avalados.
+                </p>
+                <p class="subtitle3">
+                    Nuestros egresados recibirán <b>doble certificado</b> para acreditar sus conocimientos adquiridos en
+                     torno a la capacitación transitada, (Acompañante Terapéutico, Estimulación Temprana,
+                      Integración Escolar,Introducción a la Psicopedagogía y Asistente de Sala, Auxiliar de Maestra
+                       Jardinera, asistente Jurídico ,Taller de intervenciones en TEA, Taller de Estimulación
+                        Cognitiva, Seminarios) reconociendo su aprobación por el Instituto Paulo Freire y las
+                         instituciones que nos avalan, con registro del nombre del estudiante, la cantidad de horas
+                          cátedra cursadas y las firmas de directivos y tutor de clase. Ambos certificados poseen validación por 
+                           código QR con acceso a un chequeo online de validez con matrícula interna incluída.
+                </p>
+                <p class="subtitle3">
+                QR DE PRUEBA PARA VISUALIZAR LA VALIDACIÓN:
+                </p>
+                <img class="qrcode" src="./qrdemo.png" alt="codigoqr" width="200px" height="200px">
+                <br>
+                <br>
+            </div>
         </div>
-        <div class="container-cursos">
+
+        <div class="container-cursos" id="contacto">
             <a name="ancla-contacto"></a>
             <div class="titulo-seccion">
                 <div class="texto-titulo-cursos">
@@ -271,11 +342,12 @@
                 </div>
                 <p class="subtitle2">Si queres saber más consultanos vía 
                 <a href="https://api.whatsapp.com/send?phone=+5491130048766&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20cursos%202.">Whatsapp</a> 
-                <br> O inscribite haciendo click <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqiQea_KVITxVRD4LKvveddTkx2hc-XiGwzx3k-_Z1xBJdQQ/viewform?usp=sf_link">AQUÍ</a></p>
+                <br> O inscribite haciendo click <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-y8VdwewVU4Gz6DQ-2h8qcSRBr3KKTS4G6JLWneaegQjy2Q/viewform?usp=sf_link">AQUÍ</a></p>
             </div>
         </div>
+
         <a name="ancla-cursos"></a>
-        <div class="container-cursos">
+        <div class="container-cursos" id="cursos">
             
             <div class="titulo-seccion">
                 <div class="texto-titulo-cursos">
@@ -338,10 +410,14 @@
                 <a href="./Psicopedagogia.html">+INFO</a>
             </div>
         </div>
+
         <a href="#top" class="back"> VOLVER A INICIO</a>
         <footer>
-                
-                <p> Paulo Freire Instituto. Copyright 2023</p>
+            <p> Datos de contacto:</p>
+            <p> TEL: 011-3004-8766 <br>
+             MAIL: paulofreireinstitutonline@gmail.com <br>
+             DIRECCIÓN: Las Malvinas 2891, San Miguel, Argentina <br>
+             Paulo Freire Instituto. Copyright 2023</p>
         </footer>
 
         <script>
