@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K6H7W2WN7Q"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+     gtag('config', 'G-K6H7W2WN7Q');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,7 +74,7 @@
                     <li class="nav-item"><a href="#ancla-cursos">Cursos</a></li>
                     <li class="nav-item"><a href="#ancla-contacto">Contacto</a></li>
                     <li class="nav-item"><a href="#ancla-certis">Certificados</a></li>
-                    <li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeqiQea_KVITxVRD4LKvveddTkx2hc-XiGwzx3k-_Z1xBJdQQ/viewform?usp=sf_link" class="action_btn">Inscribite</a></li>
+                    <li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc-y8VdwewVU4Gz6DQ-2h8qcSRBr3KKTS4G6JLWneaegQjy2Q/viewform?usp=sf_link" class="action_btn">Inscribite</a></li>
             </div>
         </div>
     </header>
@@ -73,7 +82,9 @@
 
     <main>
         <section class="portada-curso">
-            <h1>Curso ACOMPAÑANTE TERAPÉUTICO</h1>
+            <!--h1>Curso ACOMPAÑANTE TERAPÉUTICO</h1-->
+            <img src="./0at.png" alt="Photo-At" style="max-width: 95%;height: auto;">
+            <br>
             <div class="indice-curso">
                 <div class="item-titulo-cursos">
                     <h6 class="item-indice"><a href="#ancla-info">Información General</a> </h6>
@@ -88,17 +99,22 @@
                     <h6 class="item-indice"><a href="#ancla-laboral">Salida Laboral</a> </h6>
                 </div>
                 <div class="item-titulo-cursos">
+                    <h6 class="item-indice"><a href="#ancla-fundamentacion">Fundamentación</a> </h6>
+                </div>
+                <div class="item-titulo-cursos">
                     <h6 class="item-indice"><a href="#ancla-programa">Programa</a> </h6>
                 </div>
-                 <div class="item-titulo-cursos">
-                    <h6 class="item-indice"><a href="#ancla-certis">Programa</a> </h6>
+                <div class="item-titulo-cursos">
+                    <h6 class="item-indice"><a href="#ancla-certis">Certificación</a> </h6>
                 </div>
+                
+            </div>
             </div>
         </section>
 
         <a name="ancla-info"></a>
         <div class="container-infocurso">
-            <div class="titulo-cursos">
+            <div class="titulo-cursos" id="sección-infogeneral">
                 <div class="texto-titulo-cursos">
                     <h6 class="subtitulo-seccion">Información General</h6>
                 </div>
@@ -118,16 +134,14 @@
             </div>
 
             <a name="ancla-modalidad"></a>
-            <div class="titulo-cursos">
+            <div class="titulo-cursos" id="sección-modalidad">
                 <div class="texto-titulo-cursos">
                     <h6 class="subtitulo-seccion">Modalidad</h6>
                 </div>
                 <p class="subtitle3">Curso 100% online interactivo. Plataforma educativa intuitiva,
                      y apta para todo tipo de computadoras y dispositivos móviles.<br>
 
-                    Clases por Zoom una vez a la semana. Una vez dada, queda grabada en nuestro campus.
-                     Por lo que no tendrás que estar conectado/a al momento de dictarse la clase en vivo.
-                    Y tendrás acceso al curso y las clases aún después de haber finalizado la formación.<br>
+                    8 meses de duración. Reune 140 hs cátedras y se encuentra bajo los preceptos de la Ley de Salud Mental Nro 26.657.<br>
 
                     Foros activos las 24 hs los 7 días de la semana. Grupo de WhatsApp para la comunicación diaria.<br>
                 <br>
@@ -135,7 +149,6 @@
                 <ul>
                     <li><i class="fa fa-laptop cardcate-icon cardcate-icon-bg-o" aria-hidden="true"></i>  Clases por Zoom</li>
                     <li><i class="fa fa-laptop cardcate-icon cardcate-icon-bg-o" aria-hidden="true"></i>  Material bibliográfico en formato digital</li>
-                    <li><i class="fa fa-laptop cardcate-icon cardcate-icon-bg-o" aria-hidden="true"></i>  Campus educativo propio</li>
                     <li><i class="fab fa-whatsapp"></i> Grupo de WhatsApp</li>
                     <li><i class="fa fa-check" aria-hidden="true"></i> Trabajos prácticos</li>
                     <li><i class="fa fa-laptop cardcate-icon cardcate-icon-bg-o" aria-hidden="true"></i>  Foros con profesores y alumnos</li>
@@ -145,121 +158,314 @@
             </div>
 
             <a name="ancla-objetivos"></a>
-            <div class="titulo-cursos">
+            <div class="titulo-cursos" id="sección-objetivos">
                 
                 <div class="texto-titulo-cursos">
                     <h6 class="subtitulo-seccion">Objetivos</h6>
                 </div>
                 <p class="subtitle3">El curso está dirigido a:</p>
                 <ul>
-                    <li><i class="fa fa-check" aria-hidden="true"></i> Personas mayores de 18 con educación primaria.</li>
-                    <li><i class="fa fa-check" aria-hidden="true"></i> Trabajadores/as en actividad que se encuentren desempeñando tareas de AT <br> y no posean formación profesional específica para el desempeño de la función.
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        <b>Personas con vocación de ayudar a otros</b> a atravesar o superar obstáculos cotidianos
+                            relacionados con un diagnóstico, alguna cuestión clínica o situación social.
                         </li>
-                    <li><i class="fa fa-check" aria-hidden="true"></i> Estudiantes o profesionales de carreras afines tales como Psicología,
-                        Psicopedagogía, Trabajadores Sociales, Terapistas Ocupacionales,
-                        Enfermería, Musicoterapeutas, Asistentes Gerontológicos, etc.</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        <b>Trabajadores/as en actividad</b>  que se encuentren desempeñando tareas de AT
+                            y no posean formación profesional específica para el desempeño de la función.
+                        </li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        <b>Estudiantes o profesionales de carreras afines</b> tales como Psicología,
+                            Psicopedagogía, Trabajadores Sociales, Terapistas Ocupacionales,
+                             Enfermería, Musicoterapeutas, Asistentes Gerontológicos, etc.
+                        </li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        <b>Cualquier persona mayor o próxima a cumplir 18 años</b>; pueden ser profesionales, 
+                            estudiantes, familiares o simplemente interesados en aprender a acompañar terapéuticamente de una forma óptima y planificada
+                             a persona de todas las edades desde un abordaje biopsicosocial y respetuoso de los derechos humanos, que impulse la autonomía,
+                              refuerze la subjetividad e incentive el reforzamiento de lazos sociales que mejoren la calidad de vida de los usuarios de este servicio
+                        </li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> 
+                            <b>No se requieren estudios previos para anotarse al curso</b>, aunque para desempeñarse en
+                                el ámbito educativo al momento de trabajar se le solicitará tener nivel secundario aprobado
+                        </li>
                     
                     
                 </ul>
-                <p class="subtitle3">Se espera que al finalizar la capacitación los alumnos logren:</p>
+                <p class="subtitle3">LA finalizar el curso se espera:</p>
                 <ul>
-                    <li><i class="fa fa-check" aria-hidden="true"></i> Profesionalizar el trabajo de los Acompañantes Terapéuticos.</li>
-                    <li><i class="fa fa-check" aria-hidden="true"></i> Adquirir conocimientos esenciales sobre las patologías psicosociales (Adicciones, padecimiento mental, etc.)
-                    <br> Síndromes, tipos de discapacidades y su atención en domicilio, instituciones o de modo ambulatorio.</li>
-                    <li><i class="fa fa-check" aria-hidden="true"></i> Saber conceptos referidos a las situaciones críticas en los ciclos vitales (Niños, adolescentes, adultos y adultos mayores)
-                    <br> y su atención.</li>
-                    <li><i class="fa fa-check" aria-hidden="true"></i> Comprender los diferentes dispositivos de tratamiento y su aplicación bajo indicaciones del equipo
-                    <br> o profesional interviniente.</li>
-                    <li><i class="fa fa-check" aria-hidden="true"></i> Aprender el diseño de herramientas de acompañamiento terapéutico según objetivos indicados
-                    <br> por el/los profesional/es responsable/s</li>
-                    <li><i class="fa fa-check" aria-hidden="true"></i> Conocer el marco jurídico-legal y ético-deontológico del AT.</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        Que los estudiantes puedan construir durante la cursada la delimitación del rol
+                         específico del acompañante terapéutico, desarrollando progresivamente conciencia y
+                          compromiso criteriosos y reflexivos para acompañar en situaciones sociales,
+                           patologias, crisis de la edad, cuidados paliativos, etc.</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        Que los estudiantes puedan identificar y utilizar aproximaciones teoricas sobre
+                         psicología, psiquiatria y criterios diagnosticos referidos a trastornos mentales segun
+                          el DSM5. Tambien analizar enfermedades y situaciones que producen necesidad de
+                           acompañamiento terapéutico.</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        Que los alumnos, una vez egresados, puedan formar parte de equipos
+                         interdisciplinarios demostrando idoneidad dentro del área de necesidades sociales,
+                          trastornos mentales o emocionales en los ámbitos: escolar, judicial, institucional, en
+                           diferentes modalidades, en ámbito público o privado.</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        Que los egresados se comprometan a ser Acompañantes Terapéuticos enmarcados en
+                         la Ley de Salud mental 26.657, asumiendo una mirada integral del sujeto, teniendo en
+                          cuenta su contexto actual e histórico en los aspectos biológicos, psicológicos,
+                           sociales, culturales y económicos, así como a comprender las distintas
+                            psicopatologías y la singularidad de cada caso.</li>
                 </ul>
             </div>
 
             <a name="ancla-laboral"></a>
-            <div class="titulo-cursos">
+            <div class="titulo-cursos" id="sección-laboral">
                 
                 <div class="texto-titulo-cursos">
-                    <h6 class="subtitulo-seccion">Salida Laboral</h6>
+                    <h6 class="subtitulo-seccion">Alcance y ámbitos laborales:</h6>
                 </div>
-                <p class="subtitle3">El acompañante terapéutico es un profesional que acompaña, contiene a personas con algún tipo de patología psíquica, psiquiátrica,
+                <p class="subtitle3">
+                    El acompañante terapéutico es un profesional que acompaña, contiene a personas con algún tipo de patología psíquica, psiquiátrica,
                      física o discapacidades momentáneas, crónicas y/ o terminales. <br>
                      <br>
 
                     El trabajo del acompañante es siempre interdisciplinario y está supervisado por un profesional responsable del paciente.
-                    En su accionar, el acompañante, ejecuta estrategias diseñadas en equipo con el  profesional a cargo del paciente y acordadas con la institución
-                     o la familia en la que se desarrolla el acompañamiento. <br>
+                     En su accionar, el acompañante, ejecuta estrategias diseñadas en equipo con el  profesional a cargo del paciente y acordadas con la institución
+                      o la familia en la que se desarrolla el acompañamiento. <br>
                      <br>
                     
-                    El acompañante terapéutico puede desarrollar su función en:</p>
+                    El acompañante terapéutico puede desarrollar su función:</p>
                 <ul>
-                    <li><i class="fa fa-check" aria-hidden="true"></i> Instituciones de salud mental o de internación psiquiátrica.</li>
-                    <li><i class="fa fa-check" aria-hidden="true"></i> Instituciones intermedias, como hostales o casas de medio camino.</li>
-                    <li><i class="fa fa-check" aria-hidden="true"></i> Escuelas, instituciones educativas, centros educativos terapéuticos.</li>
-                    <li><i class="fa fa-check" aria-hidden="true"></i> En la actividad asistencial privada, acompañamiento y control diario de pacientes
-                     que requieren cuidados en sus domicilios.</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        En la actividad asistencial privada, acompañamiento y control diario de pacientes
+                         que requieren cuidados en sus domicilios.
+                    </li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        En asilos, geriátricos y hospitales acompañando a usuarios personalizadamente o 
+                         formando parte del equipo interdisciplinario de la institución.
+                    </li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        En organismos que funcionan como hogares de cobijo o albergues de personas con emergencias 
+                         sociales y/o derechos vulnerados.
+                    </li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        En instituciones educativas como AE (acompañante externo), APND (acompañante personal
+                         no docente), ATE (acompañante terpéutico escolar) o auxiliar de educación especial.
+                    </li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        En casas de medio camino, hospitales de día, centros de rehabilitación de adicciones.
+                    </li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        En centros terapéuticos, organismos comunitarios, colonias de vacaciones, etc.
+                    </li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> 
+                        En la vía pública: construyendo habilidades de autonomía, acompañando en viajes a terapias
+                        o salidas recreativas.
+                    </li>  
                 </ul>
             </div>
 
+            <a name="ancla-fundamentacion"></a>
+            <div class="titulo-cursos" id="sección-fundamentación">
+                <div class="texto-titulo-cursos">
+                    <h6 class="subtitulo-seccion">Fundamentación</h6>
+                </div>
+                <p class="subtitle3">
+                     Desde la década del 60, en Argentina, se viene construyendo un campo práctico y
+                      teórico específico para la tarea del Acompañante Terapéutico desde el campo de la
+                       salud mental, que incluye la idea de <b>favorecer la rehabilitación socio emocional de la
+                        persona que atraviesa un estado de salud vulnerable, buscando favorecer su
+                         rehabilitación, su reincercion social y de promover su adherencia a los tratamientos
+                          clínicos, evitando la estigmatización social por causas relacionadas con su
+                            padecimiento.</b>
+                </p>
+                <p class="subtitle3">
+                    Quienes trabajan o viven con personas con diagnósticos de autismo, de déficit de
+                     atención, de depresión, trastorno de pánico, esquizofrenia, alzheimer u otros
+                      diagnósticos mentales; así como en otros padecimientos relacionados con sindrome
+                       de down, parálisis cerebral, secuelas de acvs, etc. saben que el entorno del sujeto
+                        puede impulsar su desarrollo psicosocial o deteriorarlo, todo dependerá de los
+                         recursos que las personas de ese entorno pongan en juego durante la interacción,
+                          convivencia y desarrollo de la vida cotidiana. Durante la realización de este curso se
+                            convocara a la reflexión de la implicación subjetiva y se promoverá la deconstrucción
+                             de paradigmas de salud que cosifican a los "pacientes" ubicandolos como un objeto
+                              de cuidado, para elaborar una nueva conceptualización de los padecientes, como
+                               <b>SUJETOS DE DERECHOS</b> .
+                </p>
+                <p class="subtitle3">
+                    La labor del ACOMPAÑANTE TERAPÉUTICO se enmarca dentro de los criterios de la
+                     LEY NACIONAL Nro 26657 - "Derecho a la proteccion de la Salud Mental" que
+                      establece la protección de los derechos de los ciudadanos que atraviesen problemas
+                       de salud mental o sufrimiento subjetivo, y garantiza el acceso a los servicios que la
+                        promueven y la protegen.
+                </p>
+            </div>
+        
             <a name="ancla-programa"></a>
-            <div class="titulo-cursos">
+            <div class="titulo-cursos" id="sección-programa">
                 <div class="texto-titulo-cursos">
                     <h6 class="subtitulo-seccion">Programa</h6>
                 </div>
-                <p class="subtitle3">Programa de estudio:<br><br>
-                    <b>UNIDAD 1:</b>  Rol del A.T. Modalidades del Acompañamiento. Ámbitos de trabajo. Introducción a la Psicología y a la psicoterapia. Freud. Tópicas, aparato psíquico. Transferencia-Contratransferencia. TCC. Técnicas.
+                <p class="subtitle3"> <b>PLAN DE ESTUDIOS:</b> <br> </p>
+                <p class="subtitle3"> <b>Programa Analítico</b> <br>
+                    Módulo 1: <br>
+                    Especificidades del acompañamiento terapéutico:
+                </p>
+                    <ul>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>
+                            Historia, conceptos y características que definen el rol del acompañante terapéutico en la actualidad.</i>  
+                        </li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>
+                            Paradigmas de salud y modelos de abordaje.
+                        </li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>
+                            Ley 26.657 de Salud Mental y ética del at. 
+                        </li>
+                    </ul>
                     <br>
+                <p class="subtitle3"> Salud pública y salud mental. Campos de aplicación: </p>
+                    <ul>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>
+                            Psiquiatria, psicología y discapacidad: criterios de inserción del at. "La presentación clínica".</i>  
+                        </li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>
+                            Cuadernos del at. 
+                        </li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>
+                            Pedido,entrevista, informe y plan de trabajo.
+                        </li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>
+                            Trabajo en equipo y supervisión. 
+                        </li>
+                    </ul>
+                <p class="subtitle3"> 
+                    Módulo 2: <br>
+                    Psicopatología y herramientas del at:
+                </p>
+                    <ul>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>
+                            Psicofarmacología y acompañamiento terapéutico. 
+                        </li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>
+                            DSM 5.
+                            </i>  
+                        </li>
+                    </ul>
+                <p class="subtitle3">Modalidades de intervención en el acompañamiento terapéutico:</p> 
+                    <ul>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>
+                            Intervenciones en procesos diagnósticos, crisis o en remisión.  
+                        </li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>
+                            El at en la vida cotidiana, domiciliario, escolar y en actividades sociales/recreativas.  
+                        </li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> 
+                            Estimulación cognitiva.
+                        </li>
+                    </ul>
+                <p class="subtitle3">
+                    <b> PROGRAMA:</b> <br>
+                    <b>Unidad 1: Conceptualización e historia del at:</b> <br>
+                    Introducción a la teoría del acompañamiento terapéutico.
+                     Historia y actualidad del at.
+                      Conceptos: Interdisciplina, encuadre, vínculo, subjetividad, autonomía.
                     <br>
-                    <b>UNIDAD 2:</b> Historia e Incumbencias.   Historia del dispositivo. Ética del Acompañamiento Terapéutico. Leyes.
+                    <b>Unidad 2: Campo de inserción:</b> <br>
+                    La historia de la psiquiatria. Paradigmas. El Psicoanálisis.
                     <br>
+                    <b>Unidad 3: Cualidades del at:</b> <br>
+                    Empatía y empatía terapéutica. El at como promotor de la resiliencia
                     <br>
-                    <b>UNIDAD 3:</b> Psicología y psicopatologías. Psicosis. Neurosis. Trastornos de personalidad. Espectro de la esquizofrenia.
+                    <b>Unidad 4: Legistación y marco legal:</b> <br>
+                    Ley de Salud Mental. Derechos del paciente. Etica del Acompañante Terapéutico
                     <br>
+                    <b>Unidad 5: herramientas del at:</b> <br>
+                    Entrevista.  Presentación clínica. Informe y Plan de trabajo
                     <br>
-                    <b>UNIDAD 4:</b> Niños Trastornos del neurodesarrollo. Síndromes genéticos. Trabajo con niños. Escuela.
+                    <b>Unidad 6: Trastornos y criterios diagnósticos:</b> <br>
+                    Trastornos de ansiedad, Espectro de la esquizofrenia. Trastorno bipolar. Psicofarmacología. Criterios de observación y criterios de intervención.
                     <br>
+                    <b>Unidad 7: Trastornos de inicio en la infancia e intergración escolar:</b> <br>
+                    Trastornos del neurodesarrollo. Integración escolar.
+                    <b>Unidad 8: Trastornos neurocognitivos, y acompañar en la tercera edad:</b> <br>
+                    Envejecimiento normal y patológico. Estimulación cognitiva.
                     <br>
-                    <b>UNIDAD 5:</b> Adultos. El rol del AT en el abordaje de un tratamiento. Depresión. Riesgo suicida. Ansiedad.
-                    <br>
-                    <br>
-                    <b>UNIDAD 6:</b> Tercera Edad. Problemáticas de la 3ra edad. Tercera Edad. Calidad de vida. Crisis e identidad. Vejez y Salud. Vejez y Enfermedad. Mitos. Crisis. Identidad Sexual. Cambios Psicológicos y Sociales. Pérdida.
-                    <br>
-                    <br>
-                    <b>UNIDAD 7:</b> Adicciones. Bulimia y Anorexia.
-                    <br>
-                    <br>
-                    <b>UNIDAD 8:</b> Rol del AT. Cuestiones a tener en cuenta a la hora de trabajar como AT.</p>
+                    <b>Unidad 9: Otros trastornos:</b> <br>
+                    Adicciones. Trastornos de la conducta alimentaria. Trastorno del estres postraumático.
+                </p>
             </div>
             
             <a name="ancla-certis"></a>
-            <div class="titulo-cursos">
+            <div class="titulo-cursos" id="sección-certificados">
                 
                 <div class="texto-titulo-cursos">
                     <h6 class="subtitulo-seccion">Certificados</h6>
                 </div>
-                <p class="subtitle3">INFO DE CERTIFICADOS:</p>
-                <ul>
-                    <li><i class="fa fa-check" aria-hidden="true"></i> Certificados</li>
-                </ul>
+                <p class="subtitle3">
+                    En <b>INSTITUTO PAULO FREIRE</b> brindamos cursos online para aumentar tus conocimientos y
+                     posibilitar una rápida salida laboral. Nuestro marco educativo sigue los fundamentos de la
+                      Educación No Formal, definida como 
+                    <em> “toda actividad organizada, sistemática, educativa,
+                           realizada fuera del marco del sistema oficial, para facilitar determinadas clases de
+                            aprendizaje a subgrupos particulares de la población.”</em>. <br> 
+                    así, mediante clases dictadas en vivo por docentes seleccionados a partir de sus cualidades
+                     humanas, académicas y profesionales, brindamos una educación basada en el compromiso recíproco con
+                      certificación privada,avalada por las siguientes instituciones :
+                </p>
+                <p class="subtitle3">
+                    <b>LA HORA DE LOS PUEBLOS</b>, Centro de Estudios Sociales, Culturales y Políticos. Matrícula
+                     Provincial N° 36194, con dirección Física en Araujo N°3431, Don Orione, Buenos Aires,
+                      Argentina; promoviendo programas educativos que promuevan la participación comunitaria,
+                       favorezcan la inserción en el mercado laboral y el desarrollo de la Educación
+                        Popular.
+                </p>
+                <p class="subtitle3">
+                    <b>CÁMARA ARGENTINA para la FORMACIÓN y la CAPACITACIÓN LABORAL</b>, Asociación
+                        Civil sin fines de lucro, cito en Av de Mayo N 847, Ciudad Autónoma de Buenos Aires, que
+                         reúne los centros de enseñanza, capacitación laboral y profesional en el ámbito de la
+                          educación no formal, Resolución IGJ 2517/17. Ellos fiscalizalizan nuestros programas
+                           temáticos y nuestros docentes, otorgan certificación a nivel nacional a nuestros estudiantes
+                            con la finalidad de: <br>
+                    <em>"promover, fortalecer y legitimar la educación no formal en Argentina,
+                         como una alternativa de inclusión social, desarrollo cultural y democratización del
+                          aprendizaje." </em> <br>
+                    Para chequear esta validez, podes entrar a la página de la 
+                    <a class="little-a" href="https://camaraargentina.com.ar" target="_blank"> Cámara Argentina</a>, <br>
+                     vas a encontrar nuestro instituto y al seleccionar la pestaña
+                      "cursos certificados", y luego "CURSOS AVALADOS POR CAF" verás los cursos avalados.
+                </p>
+                <p class="subtitle3">
+                    Nuestros egresados recibirán <b>doble certificado</b> para acreditar sus conocimientos adquiridos en
+                     torno a la capacitación transitada, (Acompañante Terapéutico, Estimulación Temprana,
+                      Integración Escolar,Introducción a la Psicopedagogía y Asistente de Sala, Auxiliar de Maestra
+                       Jardinera, asistente Jurídico ,Taller de intervenciones en TEA, Taller de Estimulación
+                        Cognitiva, Seminarios) reconociendo su aprobación por el Instituto Paulo Freire y las
+                         instituciones que nos avalan, con registro del nombre del estudiante, la cantidad de horas
+                          cátedra cursadas y las firmas de directivos y tutor de clase. Ambos certificados poseen validación por 
+                           código QR con acceso a un chequeo online de validez con matrícula interna incluída.
+                </p>
+                <p class="subtitle3">
+                QR DE PRUEBA PARA VISUALIZAR LA VALIDACIÓN:
+                </p>
+                <img class="qrcode" src="./qrdemo.png" alt="codigoqr" width="200px" height="200px">
+                <br>
+                <br>
             </div>
-
-
-
         </div>
-        <div class="container-cursos">
-            <a name="ancla-contacto"></a>
+
+        <a name="ancla-contacto"></a>
+        <div class="container-cursos" id="contacto">
             <div class="titulo-seccion">
                 <div class="texto-titulo-cursos">
                     <h6 class="subtitulo-seccion">CONTACTANOS!</h6>
                 </div>
                 <p class="subtitle2">Si queres saber más consultanos vía 
                 <a href="https://api.whatsapp.com/send?phone=+5491130048766&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20cursos%202.">Whatsapp</a> 
-                <br> O inscribite haciendo click <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqiQea_KVITxVRD4LKvveddTkx2hc-XiGwzx3k-_Z1xBJdQQ/viewform?usp=sf_link">AQUÍ</a></p>
+                <br> O inscribite haciendo click <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-y8VdwewVU4Gz6DQ-2h8qcSRBr3KKTS4G6JLWneaegQjy2Q/viewform?usp=sf_link">AQUÍ</a></p>
             </div>
         </div>
     
         <a name="ancla-cursos"></a>
-        <div class="container-cursos">
+        <div class="container-cursos" id="cursos">
             
             <div class="titulo-seccion">
                 <div class="texto-titulo-cursos">
@@ -271,7 +477,7 @@
         </div>
 
         
-        <div class="container-infocursos">
+        <div class="container-infocursos" id="detalle-cursos">
             <div class="container-curso gris">
                 <a href="./Estimulacion_temprana.html"><img class="infoimg" src="./0et.png" alt="image-at"></a>
                 <p class="resumen-curso">La estimulación temprana se define como un conjunto de acciones que
@@ -323,10 +529,15 @@
                 <a href="./Psicopedagogia.html">+INFO</a>
             </div>
         </div>
+
         <a href="#top" class="back"> VOLVER A INICIO</a>
+
         <footer>
-                
-                <p> Paulo Freire Instituto. Copyright 2023</p>
+            <p> Datos de contacto:</p>
+            <p> TEL: 011-3004-8766 <br>
+             MAIL: paulofreireinstitutonline@gmail.com <br>
+             DIRECCIÓN: Las Malvinas 2891, San Miguel, Argentina <br>
+             Paulo Freire Instituto. Copyright 2023</p>
         </footer>
 
         <script>
