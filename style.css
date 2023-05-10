@@ -348,6 +348,7 @@ p{
     margin-inline-end: 0px;
     border: none;
     outline: none;
+    font-size: 14px;
     
 }
 
@@ -668,7 +669,7 @@ footer{
 .subtitle3{
     max-width: 650px;
     color: #666575;
-    font-size: 22px;
+    font-size: 19px;
     line-height: 30px; 
 }
 
@@ -1050,7 +1051,7 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
     */
 
     .infoimg{
-        width: 340px;
+        width: 360px;
         height: 280px;
     }
 
