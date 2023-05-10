@@ -520,6 +520,7 @@ footer{
     flex-direction: column;
     text-align: center;
     align-items: center;
+    background-color:#e6e5e5;
 }
 /*secciones*/
 .titulo-seccion{
