@@ -846,6 +846,11 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
         align-self: normal;
         max-width: 100%;
     }
+    
+     .testimonial{
+        height: 600px;
+        max-width: 100%;
+    }
 
     section#hero{
         padding-top: 50px;
@@ -904,6 +909,11 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
 @media(max-width: 800px){
     .container-nosotros{
         clip-path: none;
+    }
+    
+     .testimonial{
+        height: 600px;
+        max-width: 100%;
     }
 
     .navbar .links,
