@@ -559,6 +559,11 @@ footer{
     border-radius: 10px;
 }
 
+.testimonial{
+    height: 800px;
+    max-width: 80%;
+}
+
 .container-infocurso{
     display: flex;
     flex-direction: column;
@@ -985,6 +990,11 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
         flex-direction: column;
         align-content: left;
     }
+    
+    .testimonial{
+        height: 350px;
+        max-width: 100%;
+    }
 
     .puntos{
         --bs-gutter-x: 0rem;
@@ -1092,6 +1102,11 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
     .card-img-top{
         height: 200px;
         width: 250px;
+    }
+    
+    .testimonial{
+        height: 200px;
+        max-width: 100%;
     }
 
      .infoimg{
