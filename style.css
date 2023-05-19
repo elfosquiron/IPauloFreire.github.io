@@ -730,7 +730,6 @@ footer{
 
 
 .subtitulo-seccion{
-    display: flex;
     align-self: center;
     background-color:#004AAD;
     color: #fff;
