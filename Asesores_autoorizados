@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Paulo Freire Certificaciones</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-container">
+            <div class="navbar-top">
+            </div>
+        </div>
+
+        <div class="navbar-container">
+            <div class="navbar">
+                <div class="logo">
+                        <img class="navbar-logo" src="../pflogopalabra.png" alt="Paulo Freire logo">
+                </div>
+        </div>
+    </header>
+
+    <main class="infocert">
+        <br>
+        <h1>LOS SIGUIENTES NÚMEROS ESTÁN AUTORIZADOS A ASESORAR Y REALIZAR NUEVAS INSCRIPCIONES:</h1>
+        <h2>Nombre: Blanca</h2>
+        <h3>Nro: +54 9 11 5116-6390</h3>
+        <h2>Nombre: Carolina</h2>
+        <h3>Nro: +54 9 11 3464-9379</h3>
+        <h2>Nombre: Emmanuel</h2>
+        <h3>Nro: +54 9 11 6709-1386</h3>
+        <h2>Nombre: Evelyn</h2>
+        <h3>Nro: +54 9 11 4041-0254</h3>
+        <h2>Nombre: Joaquín</h2>
+        <h3>Nro: +54 9 11 2608-5804</h3>
+        <h2>Nombre: Nicole</h2>
+        <h3>Nro: +54 9 11 6105-2297</h3>
+        <h2>Nombre: Romina</h2>
+        <h3>Nro: +54 9 11 6606-5067</h3>
+        <h2>Nombre: Silvana</h2>
+        <h3>Nro: +54 9 11 6836-6723</h3>
+        <br>
+        <hr>
+    </main>
+
+    <footer>
+        <hr>
+        <h4>Instituto Paulo Freire - Año 2024</h4>
+    </footer>
+    
+</body>
+</html>
