@@ -1040,6 +1040,7 @@ datos tr.noSearch td {padding-top:10px;text-align:right;}
     }
 
    .subtitle2{
+        max-width: 425px;
         padding: 15px;
         font-size: 18px;
         line-height: 25px;
